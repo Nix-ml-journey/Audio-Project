@@ -40,24 +40,28 @@ The `mini_config.yml` file contains all configuration settings:
 
 ```
 Gitver Audio_project/
-├── input/              # Place your .mp3 audio files here
+├── input/              # Place your audio files here (see input/README.md)
+│   └── README.md      # Instructions for using the input folder
 ├── output/             # Transcription files are saved here
 ├── translated/         # Translated text files are saved here
 ├── main.py            # Main entry point
 ├── mp3.py             # Audio transcription module
 ├── translate.py       # Translation module
 ├── mini_config.yml    # Configuration file (not in git)
+├── mini_config.yml.example  # Configuration template
 └── requirements.txt   # Python dependencies
 ```
 
 ## Usage
 
-1. Place your audio file (.mp3) in the `input/` folder
+1. Place your audio file (.mp3, .wav, .m4a, or .flac) in the `input/` folder
 2. Run `python main.py`
 3. Select your preferred Whisper model size
 4. Choose the output language for translation
 5. Select translation service (Google or DeepL)
 6. Find the transcription in `output/` and translation in `translated/`
+
+**Note:** See `input/README.md` for more details about supported audio formats and usage.
 
 ## Requirements
 
