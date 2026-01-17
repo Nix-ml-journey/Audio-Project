@@ -1,0 +1,52 @@
+#audio input folder 
+input_file: 'path/to/your/input/folder'
+
+#transcript output folder
+output_folder: 'path/to/your/output/folder'
+
+translated_folder: 'path/to/your/translated/folder'
+
+# API keys
+# Get your DeepL API key from: https://www.deepl.com/pro-api
+deepl_api_key: 'your-deepl-api-key-here'
+
+# Audio translation language options (name, language code)
+audio_translation_language_options:
+  - ["Japanese", "ja"]
+  - ["Chinese", "zh"]
+  - ["English", "en"]
+  - ["Korean", "ko"]
+  - ["Spanish", "es"]
+  - ["French", "fr"]
+  - ["German", "de"]
+  - ["Italian", "it"]
+  - ["Portuguese", "pt"]
+  - ["Russian", "ru"]
+  - ["Thai", "th"]
+  - ["Vietnamese", "vi"]
+
+#Timestamp pattern
+timestamp_pattern: '\[(\d{2}):(\d{2})\s*-\s*(\d{2}):(\d{2})\]'
+
+# Model sizes (for Whisper)
+model_sizes:
+  tiny: "~75MB"
+  base: "~150MB"
+  small: "~500MB"
+  medium: "~1.5GB"
+  large: "~3GB"
+
+# Language prompts (for Whisper transcription)
+language_prompts:
+  ja: "日本語の音声です。"
+  zh: "这是中文语音。"
+  en: "This is English audio."
+  ko: "이것은 한국어 오디오입니다."
+  es: "Este es audio en español."
+  fr: "Ceci est un audio en français."
+  de: "Dies ist deutsches Audio."
+  it: "Questo è audio italiano."
+  pt: "Este é áudio em português."
+  ru: "Это русский аудио."
+  th: "นี่คือเสียงภาษาไทย"
+  vi: "Đây là âm thanh tiếng Việt."
