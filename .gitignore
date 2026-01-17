@@ -34,6 +34,7 @@ mini_config.yml
 # Input/Output folders (audio files and generated content)
 # Ignore audio files in input folder, but keep the folder structure
 input/*.mp3
+!input/Vietname.mp3
 input/*.wav
 input/*.m4a
 input/*.flac
